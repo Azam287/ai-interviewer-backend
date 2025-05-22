@@ -1,5 +1,5 @@
 
-let loginRoutes = [
+let healthRoutes = [
     {
         type:"get",
         path:"/",
@@ -11,5 +11,5 @@ let loginRoutes = [
 ];
 
 module.exports={
-    loginRoutes,
+    healthRoutes,
 }

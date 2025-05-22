@@ -12,6 +12,7 @@
   "author": "Mohd. Azam Noor",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "body-parser": "^1.20.3",
     "connect-pg-simple": "^10.0.0",
     "cookie-parse": "^0.4.0",
@@ -21,11 +22,13 @@
     "express": "^4.21.1",
     "express-session": "^1.18.1",
     "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.16.0",
     "mongoose": "^8.15.0",
     "multer": "^2.0.0",
     "pdf-parse": "^1.1.1",
     "pg": "^8.13.1",
+    "uuid": "^11.1.0",
     "winston": "^3.16.0"
   }
 }
