@@ -12,9 +12,16 @@ const signInValidation = (data) => {
   return { valid: 1, message: "success" };
 };
 
-const loginSchema = Joi.object({
-  email: Joi.string().email().required(),
-  password: Joi.string().required(),
-});
+const loginValidation = (data) => {
+  const loginSchema = Joi.object({
+    email: Joi.string().email().required(),
+    password: Joi.string().required(),
+  });
 
-module.exports = { signInValidation, loginSchema };
+  const validationResult = loginSchema.validate(data);
+  if (validationResult?.error)
+    return { valid: 0, message: validationResult?.error };
+  return { valid: 1, message: "success" };
+};
+
+module.exports = { signInValidation, loginValidation };
